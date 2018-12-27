@@ -9,7 +9,7 @@ const initialState = {
     openModal: false,
     modalKey: ''
   },
-  rightDrawerIsOpen: false
+  leftDrawerIsOpen: false
 }
 
 function uiReducer(state = initialState, action) {
@@ -44,14 +44,14 @@ function uiReducer(state = initialState, action) {
         }
       })
 
-    case constants.OPEN_RIGHT_DRAWER:
+    case constants.OPEN_LEFT_DRAWER:
       return Object.assign({}, state, {
-        rightDrawerIsOpen: true
+        leftDrawerIsOpen: true
       })
 
-    case constants.CLOSE_RIGHT_DRAWER:
+    case constants.CLOSE_LEFT_DRAWER:
       return Object.assign({}, state, {
-        rightDrawerIsOpen: false
+        leftDrawerIsOpen: false
       })
 
     default:

@@ -26,14 +26,14 @@ export function closeConfirmModal() {
   }
 }
 
-export function openRightDrawer() {
+export function openLeftDrawer() {
   return {
-    type: constants.OPEN_RIGHT_DRAWER
+    type: constants.OPEN_LEFT_DRAWER
   }
 }
 
-export function closeRightDrawer() {
+export function closeLeftDrawer() {
   return {
-    type: constants.CLOSE_RIGHT_DRAWER
+    type: constants.CLOSE_LEFT_DRAWER
   }
 }
